@@ -6,39 +6,40 @@
 -- Bana isimleri Nick, Ed ve Jennifer olan aktörün adını, soyadını göster.
 
 		SELECT first_name , last_name  FROM actor 
-		WHERE first_name IN ('Nick', 'Ed'  , 'Jennifer')
+		WHERE first_name IN ('Nick', 'Ed'  , 'Jennifer');
 
--- Bana yalnızca adları Ed, Nick ve Jennifer olan aktörün soyadını göster
+-- Bana yalnızca adları Ed, Nick ve Jennifer olan aktörün soyadını göster.
         
 		SELECT last_name  FROM actor 
-		WHERE first_name IN ('Nick', 'Ed'  , 'Jennifer')
+		WHERE first_name IN ('Nick', 'Ed'  , 'Jennifer');
 		
--- Bana adres tablosunun tüm ayrıntılarını göster
-        SELECT * FROM address
+-- Bana adres tablosunun tüm ayrıntılarını göster.
+      			
+		SELECT * FROM address ;
 	   
--- Adres tablosundaki ilçe ve telefonu azalan sırayla görmek istiyorum
+-- Adres tablosundaki ilçe ve telefonu azalan sırayla görmek istiyorum.
 		SELECT district , phone FROM address 
 		ORDER BY district DESC , phone DESC ;
 
--- bana adları (Ed, Nick ve Jennifer) farklı olan aktörlerin ad ve soyadlarını göster
+-- bana adları (Ed, Nick ve Jennifer) farklı olan aktörlerin ad ve soyadlarını göster.
 
 	  	SELECT first_name , last_name  FROM actor 
-		WHERE first_name IN ('Nick', 'Ed'  , 'Jennifer')
+		WHERE first_name IN ('Nick', 'Ed'  , 'Jennifer');
 
 
--- Bana actor_id'nin boş olduğu aktör tablosundaki diğer tüm ayrıntıları göster
+-- Bana actor_id'nin boş olduğu aktör tablosundaki diğer tüm ayrıntıları göster.
 		SELECT *  FROM actor 
 		WHERE actor_id IS NULL;
 
--- Bana actor_id'nin boş olmadığı aktör tablosundaki diğer tüm ayrıntıları göster
+-- Bana actor_id'nin boş olmadığı aktör tablosundaki diğer tüm ayrıntıları göster.
 		SELECT *  FROM actor 
 		WHERE actor_id IS NOT NULL;
 		
--- Film tablosunda boş olmayan satır sayısını görmek istiyorum
+-- Film tablosunda boş olmayan satır sayısını görmek istiyorum.
 		SELECT count (*) FROM film ;
 
--- Film tablosunda film_id sayısını görmek istiyorum
-		SELECT count (*) film_id FROM film 
+-- Film tablosunda film_id sayısını görmek istiyorum.
+		SELECT count (*) film_id FROM film ;
 	
 -- COUNT ve SUM komutunu kullanarak ortalama miktarı hesaplayın. Maksimum ve minimum miktarı göster
 
@@ -70,7 +71,8 @@
 
 
 -- Bana film.id, film.title, film.description ve film_length'i göster. film uzunluğunu 4 kategoriye ayırın (100 üzeri, 86-100, 72-86 ve 72 altı)
-SELECT film.id, film.title, film.description , film_length FROM film
+
+        SELECT film.id, film.title, film.description , film_length FROM film ;
 
 
 -- Bana yukarıdaki dört kategoriden COUNT tanesini göster.
