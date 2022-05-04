@@ -1,7 +1,6 @@
 # SQL-Calısma
  /* Yeni başlayan biriyseniz, SQL Veritabanı dosyası oluşturma ve sorgulamaya bakın.*/
- --Yeni başlayan biriyseniz, SQL Veritabanı dosyası oluşturma ve sorgulamaya bakın.
-
+ 
 
 -- Bana isimleri Nick, Ed ve Jennifer olan aktörün adını, soyadını göster.
 		SELECT first_name , last_name  FROM actor 
